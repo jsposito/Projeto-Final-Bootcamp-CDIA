@@ -27,7 +27,7 @@ Vou esclarecer a diferença entre os dois conjuntos de arquivos que criei:
 | `convert_existing_code.py` | Analisa e migra código existente |
 | `test_everything.py` | Testa toda estrutura + cria exemplo |
 | `migrate_code.py` | Demonstra conversão passo a passo |
-| `README.md` | Documentação |
+| `README(2).md` | Documentação |
 
 **Analogia:** São como **mobiliário e decoração** - fazem a casa funcionar.
 
