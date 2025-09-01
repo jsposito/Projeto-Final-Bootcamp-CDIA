@@ -287,7 +287,7 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 ## 👨‍💻 Autor
 
-Juliano Spósito Galdino - [GitHub](https://github.com/seu-usuario)
+Juliano Spósito Galdino - [GitHub](https://github.com/jsposito/Projeto-Final-Bootcamp-CDIA)
 
 ---
 
