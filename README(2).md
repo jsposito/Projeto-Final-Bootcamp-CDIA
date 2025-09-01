@@ -1,5 +1,4 @@
-
-Criei uma estrutura completa e profissional para seu projeto. Aqui está **exatamente** o que fazer:
+Aqui está **exatamente** o que fazer:
 
 ### ✅ **PASSO 1: Setup Inicial**
 ```bash
