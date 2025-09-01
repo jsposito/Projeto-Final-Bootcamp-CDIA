@@ -289,6 +289,4 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 Juliano Spósito Galdino - [GitHub](https://github.com/jsposito/Projeto-Final-Bootcamp-CDIA)
 
----
 
-**💡 Dica**: Este projeto foi estruturado seguindo as melhores práticas de MLOps e pode ser facilmente adaptado para diferentes problemas de Machine Learning!
