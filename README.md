@@ -79,7 +79,7 @@ python quick_start.py  # ← ESTE!
 
 ---
 ### **Se você quer RODAR no google notebook:**
-- Abra no google Colab o arquivo da "RandomForest.ipynb"
+- Abra no google Colab o arquivo "RandomForest.ipynb"
 - Não esqueça de anexar o bootcamp_train.csv
 
 
