@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  ml-app:
+    build: .
+    container_name: random-forest-ml
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./configs:/app/configs
+    environment:
+      - PYTHONPATH=/app
+      - STREAMLIT_SERVER_HEADLESS=true
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Opcional: Adicionar banco de dados para logs/métricas
+  # postgres:
+  #   image: postgres:13
+  #   container_name: ml-postgres
+  #   environment:
+  #     POSTGRES_DB: ml_project
+  #     POSTGRES_USER: ml_user
+  #     POSTGRES_PASSWORD: ml_password
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   ports:
+  #     - "5432:5432"
+
+# volumes:
+#   postgres_data:
