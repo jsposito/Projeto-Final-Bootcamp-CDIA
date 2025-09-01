@@ -60,10 +60,10 @@ Com essa estrutura, você terá um projeto que impressiona recrutadores e demons
 - **CI/CD** automatizado
 - **Clean Code** e documentação
 
-### ❓ **Precisa de ajuda?**
+### ❓ **AJUDA**
 
 1. **Executou `test_everything.py`?** - Vai criar tudo e testar
 2. **Tem seu dataset?** - Coloque em `data/raw/`
 3. **Quer começar simples?** - Use `quick_start.py`
 
-**Mãos à obra!** 🚀 Execute `python test_everything.py` e me conte como foi!
+**PRONTO!** 🚀 Execute `python test_everything.py` .
