@@ -12,7 +12,7 @@ Vou esclarecer a diferença entre os dois conjuntos de arquivos que criei:
 | `src/dashboard/streamlit_app.py` | Dashboard interativo |
 | `Dockerfile` | Container Docker |
 | `.github/workflows/ci.yml` | Pipeline CI/CD |
-| `README.md` | Documentação |
+| `README(1).md` | Documentação |
 
 **Analogia:** É como construir a **estrutura de uma casa** - paredes, fundação, instalações.
 
@@ -27,6 +27,7 @@ Vou esclarecer a diferença entre os dois conjuntos de arquivos que criei:
 | `convert_existing_code.py` | Analisa e migra código existente |
 | `test_everything.py` | Testa toda estrutura + cria exemplo |
 | `migrate_code.py` | Demonstra conversão passo a passo |
+| `README.md` | Documentação |
 
 **Analogia:** São como **mobiliário e decoração** - fazem a casa funcionar.
 
