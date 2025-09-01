@@ -94,7 +94,7 @@ python quick_start.py  # ← ESTE!
    - Execute com seus dados
 
 4. **`docker-compose up --build`**
-   - Versão profissional containerizada
+   - Versão containerizada
 
 ---
 
