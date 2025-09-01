@@ -1,36 +1,51 @@
-# Projeto-Final-Bootcamp-CDIA
-Bootcamp Ciência de Dados e Inteligência Artificial
-# Projeto de Manutenção Preditiva - Bootcamp CDIA
+🎉 Estrutura Completa!
 
-## 1. Objetivo do Projeto
+✅ Arquivos Principais:
 
-Este projeto visa desenvolver um sistema inteligente de manutenção preditiva para uma empresa do setor industrial. O objetivo é criar um modelo de Machine Learning capaz de prever a probabilidade de 5 tipos diferentes de falhas em máquinas, utilizando dados de sensores IoT. [cite_start]A solução permite que a equipe de manutenção atue de forma proativa, reduzindo custos com paradas inesperadas e otimizando a produção. 
+src/data/data_loader.py - Carregamento robusto de dados
+src/data/preprocessing.py - Pipeline completo de pré-processamento
+src/models/random_forest.py - Modelo Random Forest com todas funcionalidades
+src/utils/logger.py - Sistema de logging
+scripts/train_model.py - Script completo de treinamento
+src/dashboard/streamlit_app.py - Dashboard interativo
+Dockerfile - Containerização
+.github/workflows/ci.yml - Pipeline CI/CD
+README.md - Documentação completa
 
-## 2. Descrição dos Dados
+🚀 Para começar agora:
 
-[cite_start]O conjunto de dados utilizado foi o `bootcamp_train.csv`, contendo informações sobre atributos de máquinas, como: 
-- `tipo`: Tipo de produto/máquina (L, M, H)
-- `temperatura_ar`: Temperatura do ar no ambiente (K)
-- `velocidade_rotacional`: Velocidade da máquina (RPM)
-- `torque`: Torque da máquina (Nm)
-- `desgaste_da_ferramenta`: Tempo de uso da ferramenta (minutos)
-- **Colunas-alvo**: 5 colunas binárias indicando tipos específicos de falha (FDF, FDC, FP, FTE, FA).
+Execute o setup:
 
-## 3. Como Executar o Projeto
+bashpython setup.py
 
-1.  **Ambiente:** O código foi desenvolvido para ser executado em um ambiente Google Colab.
-2.  **Arquivo:** Faça o upload do notebook `Preparação_completa_do_terreno (1).ipynb` para o Colab.
-3.  **Execução:** Execute as células do notebook em ordem sequencial. Será solicitado o upload do arquivo `bootcamp_train.csv`.
-4.  **Resultado:** Ao final, o notebook irá gerar e baixar automaticamente o arquivo `submission.csv` com as previsões de probabilidade para um conjunto de teste hipotético.
+Instale dependências:
 
-## 4. Decisões de Modelagem e Justificativas
+bashpip install -r requirements.txt
 
--   **Tratamento de Dados:** A análise inicial revelou dados ausentes e inconsistentes. Os valores ausentes foram preenchidos com a **mediana** (robusta a outliers) e os rótulos de falha foram padronizados para um formato binário (0/1).
--   **Abordagem do Problema:** O problema foi modelado como uma **classificação multirrótulo**, utilizando o `MultiOutputClassifier` do Scikit-learn. Esta abordagem treina um classificador independente para cada tipo de falha, o que é ideal para o problema.
--   **Algoritmo:** Foi utilizado um `RandomForestClassifier` devido à sua alta performance com dados tabulares. O parâmetro `class_weight='balanced'` foi ativado para mitigar o forte **desbalanceamento de classes** identificado na análise exploratória.
+Mova seu dataset:
 
-## 5. Métricas de Avaliação Utilizadas
+bash# Coloque seu arquivo CSV em data/raw/
+cp seu_dataset.csv data/raw/
 
-Dado o desbalanceamento das classes de falha, a acurácia não é uma métrica confiável. Por isso, utilizamos:
--   **Classification Report:** Fornece `Precision`, `Recall` e `F1-Score` para cada tipo de falha, oferecendo uma visão detalhada do desempenho do modelo em prever as classes minoritárias (as falhas).
--   **ROC AUC Score:** Mede a capacidade do modelo de distinguir corretamente entre classes positivas e negativas.
+Treine o modelo:
+
+bashpython scripts/train_model.py --data data/raw/seu_dataset.csv --target sua_coluna_target --tune-hyperparams
+
+Execute o dashboard:
+
+bashpython scripts/run_dashboard.py
+🐳 Com Docker:
+bashdocker-compose up --build
+💡 Vantagens desta estrutura:
+✅ Portfolio - Código organizado e documentado
+✅ Pronto para produção - Docker + CI/CD
+✅ Dashboard impressionante - Interface visual completa
+✅ Escalável - Fácil de expandir e manter
+✅ Testável - Pipeline de testes automatizados
+📋 Próximos passos recomendados:
+
+Converter seu código atual do Jupyter para usar essas classes
+Testar com seu dataset
+Customizar o dashboard com seus gráficos específicos
+Fazer commit no GitHub com a estrutura
+Deploy no Streamlit Cloud (gratuito)
