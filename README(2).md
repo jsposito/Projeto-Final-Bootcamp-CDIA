@@ -37,7 +37,7 @@ streamlit run src/dashboard/streamlit_app.py
 # Opção 2: Com script
 python scripts/run_dashboard.py
 
-# Opção 3: Docker (mais profissional)
+# Opção 3: Docker
 docker-compose up --build
 ```
 
